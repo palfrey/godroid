@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:a="http://schemas.android.com/apk/res/android"
+	package="de.agrothe.go"
+	a:versionCode="24"
+	a:versionName="1.2.5"
+	a:installLocation="auto">
+	<uses-sdk a:minSdkVersion="3" a:targetSdkVersion="8"/>
+	<uses-permission a:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<supports-screens a:largeScreens="true"
+		a:normalScreens="true"
+		a:smallScreens="true"
+		a:anyDensity="true"/>
+	<!--
+	a:debuggable="false"
+	-->
+	<application a:label="@string/app_name"
+		a:icon="@drawable/activity_icon"
+		a:description="@string/app_description"
+		a:theme="@style/Theme.NoBackground">
+		<activity a:name=".MainActivity"
+			a:screenOrientation="portrait">
+			<intent-filter>
+				<action a:name="android.intent.action.MAIN"/>
+				<category a:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+	</application>
+</manifest>
