@@ -1,0 +1,4 @@
+proguard.cfg
+local.properties
+bin
+gen
